@@ -39,24 +39,27 @@ export class TaskService {
     return Tasks.length;
   }
 
-  checkTask(id: any, title: any,description: any) {
+  checkTask(item: any) {
     let updatedTask = {
-      id:  id,
-      title: title,
-      description: description,
+      id:  item.id,
+      title: item.title,
+      description: item.description,
       status: 'Completed'
     }
-    return Tasks[id] = updatedTask;
+    return Tasks.splice(Tasks.indexOf(item), 1), Tasks.push(updatedTask)
+    return Tasks.push(updatedTask)
+
+    //return Tasks[id] = updatedTask;
   }
 
-  uncheckTask(id: any, title: any,description: any) {
+  uncheckTask(item: any) {
     let updatedTask = {
-      id:  id,
-      title: title,
-      description: description,
+      id:  item.id,
+      title: item.title,
+      description: item.description,
       status: 'Pending'
     }
-    return Tasks[id] = updatedTask;
+    return Tasks.splice(Tasks.indexOf(item), 1), Tasks.push(updatedTask)
   }
 
 }

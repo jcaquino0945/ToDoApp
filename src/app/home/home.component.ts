@@ -19,20 +19,21 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.task$ = this.taskService.getTasks()
     console.log(this.task$)
-
-    this.id = (this.taskService.getTaskLength() + 1).toString();
+    this.task$.sort((a,b) => (a.status > b.status) ? 1 : ((b.status > a.status) ? -1 : 0))
   }
 
-  checkTask(id: any,title: any,description: any) {
-    this.taskService.checkTask(id,title,description)
+  checkTask(item:any) {
+    this.taskService.checkTask(item)
     this.task$ = this.taskService.getTasks()
+    this.task$.sort((a,b) => (a.status > b.status) ? 1 : ((b.status > a.status) ? -1 : 0))
 
     console.log(this.task$)
   }
 
-  uncheckTask(id: any,title: any,description: any) {
-    this.taskService.uncheckTask(id,title,description)
+  uncheckTask(item:any) {
+    this.taskService.uncheckTask(item)
     this.task$ = this.taskService.getTasks()
+    this.task$.sort((a,b) => (a.status > b.status) ? 1 : ((b.status > a.status) ? -1 : 0))
 
     console.log(this.task$)
 
