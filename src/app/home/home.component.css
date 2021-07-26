@@ -1,0 +1,20 @@
+.section-1 {
+    background-image: url('../../assets/images/80622072_818311235304313_8533843013643087754_n.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    background-color: red;
+    width: 100%;
+}
+.section-1-overlay {
+    background-color: #0568c5ad;
+    width: 100%;
+    height: 100%;
+}
+.section-1-body h1 {
+    font-family: 'Antonio', sans-serif;
+}
+.section-1-body p {
+    font-family: 'Abel', sans-serif;
+}
+
