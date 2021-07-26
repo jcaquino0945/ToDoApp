@@ -18,3 +18,13 @@
     font-family: 'Abel', sans-serif;
 }
 
+.section-2 .text-base {
+    font-family: 'Antonio', sans-serif;
+}
+
+.section-2 .text-sm {
+    font-family: 'Abel', sans-serif;
+}
+.section-2>div:nth-child(even){
+    background-color:rgb(243, 243, 243);
+   }
