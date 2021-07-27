@@ -32,4 +32,5 @@ export const Tasks: Task[] =
             description: "Catch up on saved ui/ux videos on coursera",
             status: 'Completed'
         },
+        
     ]
