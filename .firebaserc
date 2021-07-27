@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "todoapp-64bda"
+  },
+  "targets": {
+    "todoapp-64bda": {
+      "hosting": {
+        "ToDoApp": [
+          "todoapp-64bda"
+        ]
+      }
+    }
+  }
+}
